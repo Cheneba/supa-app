@@ -32,7 +32,13 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photoPermission": "The app accesses you photo to upload an avatar..."
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
