@@ -31,11 +31,11 @@ const InitialLayout = () => {
 
     if(session && !inAuthGroup) {
       router.replace('/(auth)');
-    } else if (!session) {
-      router.replace('/')
+    } else if (!session && inAuthGroup) {
+      router.replace('/(public)')
     }
 
-  }, [initialized, session])
+  }, [initialized, session, segments])
   
   return <Slot/>
 }
