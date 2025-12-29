@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { ActivityIndicator, Alert, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
-import Btn from '../../components/button'
+import Btn from '../../components/Button'
 import { supabase } from '../../utils/supabase'
 
 const Page = () => {
